@@ -224,30 +224,30 @@ export default function Home() {
           <div className="section-kicker">/ What do you need?</div>
           <h2 style={{ marginBottom: "3rem", fontSize: "clamp(36px, 4vw, 56px)", lineHeight: 1.05, letterSpacing: "-.04em", fontWeight: 600 }}>What are you trying to <br/><em style={{ color: "var(--lime)", fontStyle: "normal" }}>build?</em></h2>
           <div className="intent-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
-            <a href="/solutions/website-development" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c', transition: 'all 0.2s' }}>
+            <a href="/solutions/website-development" className="intent-card" style={{ padding: '24px', backgroundColor: '#fff', borderRadius: '12px', textDecoration: 'none', border: '1px solid #e2e8f0', transition: 'all 0.2s', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
               <div style={{ fontSize: '32px', marginBottom: '16px' }}>🌐</div>
-              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Website</h3>
-              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>Business website, e-commerce, portal</p>
+              <h3 style={{ color: '#1a202c', fontSize: '20px', marginBottom: '8px', fontWeight: 'bold' }}>Website</h3>
+              <p style={{ color: '#4a5568', fontSize: '14px', margin: 0 }}>Business website, e-commerce, portal</p>
             </a>
-            <a href="/solutions/mobile-app-development" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c' }}>
+            <a href="/solutions/mobile-app-development" className="intent-card" style={{ padding: '24px', backgroundColor: '#fff', borderRadius: '12px', textDecoration: 'none', border: '1px solid #e2e8f0', transition: 'all 0.2s', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
               <div style={{ fontSize: '32px', marginBottom: '16px' }}>📱</div>
-              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Mobile App</h3>
-              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>Android, iOS, cross-platform apps</p>
+              <h3 style={{ color: '#1a202c', fontSize: '20px', marginBottom: '8px', fontWeight: 'bold' }}>Mobile App</h3>
+              <p style={{ color: '#4a5568', fontSize: '14px', margin: 0 }}>Android, iOS, cross-platform apps</p>
             </a>
-            <a href="/solutions/custom-software-development" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c' }}>
+            <a href="/solutions/custom-software-development" className="intent-card" style={{ padding: '24px', backgroundColor: '#fff', borderRadius: '12px', textDecoration: 'none', border: '1px solid #e2e8f0', transition: 'all 0.2s', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
               <div style={{ fontSize: '32px', marginBottom: '16px' }}>💻</div>
-              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Web Application</h3>
-              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>Business platforms and SaaS products</p>
+              <h3 style={{ color: '#1a202c', fontSize: '20px', marginBottom: '8px', fontWeight: 'bold' }}>Web Application</h3>
+              <p style={{ color: '#4a5568', fontSize: '14px', margin: 0 }}>Business platforms and SaaS products</p>
             </a>
-            <a href="/business-core-systems/erp" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c' }}>
+            <a href="/business-core-systems/erp" className="intent-card" style={{ padding: '24px', backgroundColor: '#fff', borderRadius: '12px', textDecoration: 'none', border: '1px solid #e2e8f0', transition: 'all 0.2s', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
               <div style={{ fontSize: '32px', marginBottom: '16px' }}>🏢</div>
-              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Business System</h3>
-              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>ERP, CRM, HR, inventory, operations</p>
+              <h3 style={{ color: '#1a202c', fontSize: '20px', marginBottom: '8px', fontWeight: 'bold' }}>Business System</h3>
+              <p style={{ color: '#4a5568', fontSize: '14px', margin: 0 }}>ERP, CRM, HR, inventory, operations</p>
             </a>
-            <a href="/build/a-business-app" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c' }}>
+            <a href="/build/a-business-app" className="intent-card" style={{ padding: '24px', backgroundColor: '#fff', borderRadius: '12px', textDecoration: 'none', border: '1px solid #e2e8f0', transition: 'all 0.2s', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
               <div style={{ fontSize: '32px', marginBottom: '16px' }}>🚀</div>
-              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Something Custom</h3>
-              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>Tell us your idea and let&apos;s build it</p>
+              <h3 style={{ color: '#1a202c', fontSize: '20px', marginBottom: '8px', fontWeight: 'bold' }}>Something Custom</h3>
+              <p style={{ color: '#4a5568', fontSize: '14px', margin: 0 }}>Tell us your idea and let&apos;s build it</p>
             </a>
           </div>
         </div>
@@ -269,40 +269,40 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="timeline section-pad" style={{ backgroundColor: "#0b0f13", borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+      <section className="timeline section-pad">
         <div className="container">
           <div className="section-kicker">/ the process</div>
           <h2 style={{ marginBottom: "3rem", fontSize: "clamp(36px, 4vw, 56px)", lineHeight: 1.05, letterSpacing: "-.04em", fontWeight: 600 }}>What happens after<br /><span>I enquire?</span></h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
-              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>01 — We understand your idea</div>
-              <p style={{ color: '#a2b1bd', margin: 0 }}>A 15–30 minute discussion with our team to understand your vision.</p>
+            <div style={{ padding: '2rem', backgroundColor: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+              <div style={{ color: '#1e3a8a', fontWeight: 'bold', marginBottom: '8px', fontSize: '18px' }}>01 — We understand your idea</div>
+              <p style={{ color: '#4a5568', margin: 0 }}>A 15–30 minute discussion with our team to understand your vision.</p>
             </div>
-            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
-              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>02 — We analyse your requirements</div>
-              <p style={{ color: '#a2b1bd', margin: 0 }}>We map out business requirements, users, workflows, and technology needs.</p>
+            <div style={{ padding: '2rem', backgroundColor: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+              <div style={{ color: '#1e3a8a', fontWeight: 'bold', marginBottom: '8px', fontSize: '18px' }}>02 — We analyse your requirements</div>
+              <p style={{ color: '#4a5568', margin: 0 }}>We map out business requirements, users, workflows, and technology needs.</p>
             </div>
-            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
-              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>03 — We recommend the right solution</div>
-              <p style={{ color: '#a2b1bd', margin: 0 }}>You don&apos;t need to know which technology you need; we will architect it for you.</p>
+            <div style={{ padding: '2rem', backgroundColor: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+              <div style={{ color: '#1e3a8a', fontWeight: 'bold', marginBottom: '8px', fontSize: '18px' }}>03 — We recommend the right solution</div>
+              <p style={{ color: '#4a5568', margin: 0 }}>You don&apos;t need to know which technology you need; we will architect it for you.</p>
             </div>
-            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
-              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>04 — You receive a proposal</div>
-              <p style={{ color: '#a2b1bd', margin: 0 }}>Detailed scope, features, timeline, and commercials. Complete transparency.</p>
+            <div style={{ padding: '2rem', backgroundColor: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+              <div style={{ color: '#1e3a8a', fontWeight: 'bold', marginBottom: '8px', fontSize: '18px' }}>04 — You receive a proposal</div>
+              <p style={{ color: '#4a5568', margin: 0 }}>Detailed scope, features, timeline, and commercials. Complete transparency.</p>
             </div>
-            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
-              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>05 — Development begins</div>
-              <p style={{ color: '#a2b1bd', margin: 0 }}>Milestones, reviews, and regular communication throughout the build.</p>
+            <div style={{ padding: '2rem', backgroundColor: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+              <div style={{ color: '#1e3a8a', fontWeight: 'bold', marginBottom: '8px', fontSize: '18px' }}>05 — Development begins</div>
+              <p style={{ color: '#4a5568', margin: 0 }}>Milestones, reviews, and regular communication throughout the build.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="not-for-everyone section-pad">
+      <section className="not-for-everyone section-pad" style={{ paddingBottom: "4rem" }}>
         <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
           <div>
-            <h3 style={{ fontSize: '24px', marginBottom: '1.5rem', color: '#f5c06c' }}>We may not be the right fit if...</h3>
-            <ul style={{ color: '#a2b1bd', display: 'flex', flexDirection: 'column', gap: '1rem', listStyle: 'none', padding: 0 }}>
+            <h3 style={{ fontSize: '24px', marginBottom: '1.5rem', color: '#c2410c' }}>We may not be the right fit if...</h3>
+            <ul style={{ color: '#4a5568', display: 'flex', flexDirection: 'column', gap: '1rem', listStyle: 'none', padding: 0 }}>
               <li>✕ You&apos;re looking for the cheapest possible development.</li>
               <li>✕ You only want someone to write code without understanding the business.</li>
               <li>✕ Requirements are intentionally unclear and expected to remain that way.</li>
@@ -310,8 +310,8 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h3 style={{ fontSize: '24px', marginBottom: '1.5rem', color: '#97d197' }}>We work best with businesses that...</h3>
-            <ul style={{ color: '#a2b1bd', display: 'flex', flexDirection: 'column', gap: '1rem', listStyle: 'none', padding: 0 }}>
+            <h3 style={{ fontSize: '24px', marginBottom: '1.5rem', color: '#15803d' }}>We work best with businesses that...</h3>
+            <ul style={{ color: '#4a5568', display: 'flex', flexDirection: 'column', gap: '1rem', listStyle: 'none', padding: 0 }}>
               <li>✓ Have a real business problem to solve.</li>
               <li>✓ Want technology built around their workflow.</li>
               <li>✓ Value maintainability and scalable code.</li>
