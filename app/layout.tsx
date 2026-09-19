@@ -44,9 +44,20 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const whatsappUrl = "https://wa.me/917620638650?text=Hello!%20Tecnobij%20admin%20I%20am%20interested%20in%20your%20services!";
+
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <div className="sticky-mobile-cta">
+          <div className="sticky-mobile-cta-inner">
+            <a href={whatsappUrl} className="sticky-whatsapp" aria-label="Chat on WhatsApp">WhatsApp</a>
+            <a href="tel:+917620638650" className="sticky-call" aria-label="Call Us">Call</a>
+            <a href="/estimate" className="sticky-quote" aria-label="Get a Quote">Get Quote</a>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

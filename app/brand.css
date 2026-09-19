@@ -341,3 +341,12 @@ body { background: var(--cream); color: var(--ink); }
 .trust-stat { display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .trust-stat-number { font-size: 32px; font-weight: 700; color: #fff; line-height: 1; }
 .trust-stat-label { font-size: 13px; color: #a2b1bd; }
+
+/* Sticky Mobile CTA */
+.sticky-mobile-cta { display: none; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 999; background: #11151a; border-top: 1px solid #1a222c; padding: 10px; box-shadow: 0 -4px 12px rgba(0,0,0,0.3); }
+.sticky-mobile-cta-inner { display: flex; gap: 10px; }
+.sticky-mobile-cta a { flex: 1; text-align: center; padding: 12px 10px; border-radius: 8px; font-weight: 600; font-size: 13px; text-decoration: none; }
+.sticky-whatsapp { background: #25D366; color: #fff; }
+.sticky-call { background: var(--deep); color: #fff; border: 1px solid #333; }
+.sticky-quote { background: var(--lime); color: var(--deep); }
+@media (max-width: 768px) { .sticky-mobile-cta { display: block; } body { padding-bottom: 65px; } }

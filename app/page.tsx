@@ -122,11 +122,11 @@ export default function Home() {
             <span>tecnobij<span className="brand-dot">.</span></span>
           </a>
           <div className={`nav-links ${menuOpen ? "is-open" : ""}`}>
-            <a href="/solutions/website-development" onClick={() => setMenuOpen(false)}>Web Development</a>
-            <a href="/solutions/mobile-app-development" onClick={() => setMenuOpen(false)}>App Development</a>
-            <a href="/solutions/custom-software-development" onClick={() => setMenuOpen(false)}>Custom Software</a>
+            <a href="/#services" onClick={() => setMenuOpen(false)}>Services</a>
+            <a href="/process" onClick={() => setMenuOpen(false)}>Process</a>
+            <a href="/trust" onClick={() => setMenuOpen(false)}>Trust Center</a>
             <a href="/business-core-systems/erp" onClick={() => setMenuOpen(false)}>ERP & CRM</a>
-            <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+            <a href="/#about" onClick={() => setMenuOpen(false)}>About</a>
             <a className="mobile-nav-cta" href={whatsappUrl}>Let&apos;s Talk <span aria-hidden="true">→</span></a>
           </div>
           <a className="nav-cta" href={whatsappUrl}>Let&apos;s Talk <span aria-hidden="true">→</span></a>
@@ -219,48 +219,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services section-pad" id="services">
-        <div className="what-hero">
-          <div className="container what-hero-inner">
-            <div className="what-hero-copy">
-              <div className="eyebrow what-eyebrow"><span className="eyebrow-line"></span> What we build</div>
-              <h2>Built around your<br /><em>ambition.</em></h2>
-              <p>From first sketch to final launch, we take responsibility for building the digital tools that make your business better.</p>
-              <div className="what-build-list">
-                {services.slice(0, 6).map((service) => (
-                  <article className="what-build-item" key={service.number}>
-                    <span className="what-build-number">{service.number}</span>
-                    <div><h3>{service.title}</h3><p>{service.text}</p></div>
-                  </article>
-                ))}
-              </div>
-            </div>
-            <div className="dashboard-art" aria-hidden="true">
-              <div className="dashboard-window">
-                <div className="dashboard-bar"><span className="window-dots"><i></i><i></i><i></i></span><span>tecnobij / workspace</span><span>⌕</span></div>
-                <div className="dashboard-content">
-                  <div className="dashboard-side"><b>Overview</b><span>Projects</span><span>Messages</span><span>Analytics</span><span>Settings</span></div>
-                  <div className="dashboard-main"><div className="dashboard-title">Performance <b>+32.4%</b></div><div className="dashboard-chart"><span></span><span></span><span></span><span></span><span></span><b>↗</b></div><div className="dashboard-stats"><span><b>120+</b><small>Projects<br />completed</small></span><span><b>50+</b><small>Clients<br />worldwide</small></span></div><div className="dashboard-pill"><span>✦</span> Your vision</div></div>
-                </div>
-              </div>
-              <div className="solution-chip"><span>✦</span><b>Our Solution</b><small>Powerful. Scalable.<br />Future-ready.</small></div>
-              <div className="dashboard-orbit"></div><div className="dashboard-spark">✦</div>
-            </div>
+      <section className="intent-navigation section-pad" id="services">
+        <div className="container">
+          <div className="section-kicker">/ What do you need?</div>
+          <h2 style={{ marginBottom: "3rem", fontSize: "clamp(36px, 4vw, 56px)", lineHeight: 1.05, letterSpacing: "-.04em", fontWeight: 600 }}>What are you trying to <br/><em style={{ color: "var(--lime)", fontStyle: "normal" }}>build?</em></h2>
+          <div className="intent-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
+            <a href="/solutions/website-development" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c', transition: 'all 0.2s' }}>
+              <div style={{ fontSize: '32px', marginBottom: '16px' }}>🌐</div>
+              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Website</h3>
+              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>Business website, e-commerce, portal</p>
+            </a>
+            <a href="/solutions/mobile-app-development" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c' }}>
+              <div style={{ fontSize: '32px', marginBottom: '16px' }}>📱</div>
+              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Mobile App</h3>
+              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>Android, iOS, cross-platform apps</p>
+            </a>
+            <a href="/solutions/custom-software-development" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c' }}>
+              <div style={{ fontSize: '32px', marginBottom: '16px' }}>💻</div>
+              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Web Application</h3>
+              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>Business platforms and SaaS products</p>
+            </a>
+            <a href="/business-core-systems/erp" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c' }}>
+              <div style={{ fontSize: '32px', marginBottom: '16px' }}>🏢</div>
+              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Business System</h3>
+              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>ERP, CRM, HR, inventory, operations</p>
+            </a>
+            <a href="/build/a-business-app" className="intent-card" style={{ padding: '24px', backgroundColor: '#11151a', borderRadius: '12px', textDecoration: 'none', border: '1px solid #1a222c' }}>
+              <div style={{ fontSize: '32px', marginBottom: '16px' }}>🚀</div>
+              <h3 style={{ color: '#fff', fontSize: '20px', marginBottom: '8px' }}>Something Custom</h3>
+              <p style={{ color: '#a2b1bd', fontSize: '14px', margin: 0 }}>Tell us your idea and let&apos;s build it</p>
+            </a>
           </div>
-        </div>
-        <div className="container service-panel">
-          <div className="service-list redesigned-service-list">
-            {services.map((service) => (
-              <article className="redesigned-service-card" key={service.number}>
-                <div className="redesigned-service-number">{service.number}</div>
-                <div className="redesigned-service-icon">{service.icon}</div>
-                <div className="redesigned-service-body"><h3>{service.title}</h3><p>{service.text}</p></div>
-                <ul className="service-features">{service.features?.map((feature) => <li key={feature}><Check /> {feature}</li>)}</ul>
-                <div className="redesigned-service-arrow"><ArrowUpRight size={17} /></div>
-              </article>
-            ))}
-          </div>
-          <div className="service-metrics"><div><span className="metric-icon">◎</span><b>100+</b><small>Happy clients<br />businesses that trust our solutions</small></div><div><span className="metric-icon">✦</span><b>120+</b><small>Projects delivered<br />successful projects across industries</small></div><div><span className="metric-icon">◈</span><b>3+</b><small>Years of experience<br />delivering excellence since our inception</small></div><div><span className="metric-icon">♧</span><b>10+</b><small>Team members<br />talented individuals driving our success</small></div></div>
         </div>
       </section>
 
@@ -268,13 +257,66 @@ export default function Home() {
         <div className="container">
           <div className="why-heading">
             <div><div className="section-kicker">/  the tecnobij difference</div><h2>Why businesses<br /><span>choose Tecnobij.</span></h2></div>
-            <p>Good software starts with understanding the business behind it. We bring clarity, care, and technical depth to every build.</p>
+            <p>We systematically remove the friction of building software by aligning our process entirely around your business goals.</p>
           </div>
           <div className="why-grid">
-            <article className="why-card why-card-orange"><span className="why-number">01</span><span className="why-icon"><Check /></span><h3>Business-first thinking</h3><p>We understand the workflow before writing the code.</p></article>
-            <article className="why-card why-card-blue"><span className="why-number">02</span><span className="why-icon"><CodeIcon /></span><h3>Built around you</h3><p>No unnecessary features or bloated systems.</p></article>
-            <article className="why-card why-card-purple"><span className="why-number">03</span><span className="why-icon"><LayersIcon /></span><h3>Scalable technology</h3><p>Architecture designed to grow with your business.</p></article>
-            <article className="why-card why-card-green"><span className="why-number">04</span><span className="why-icon"><SparkIcon /></span><h3>Long-term partnership</h3><p>We don&apos;t disappear after deployment.</p></article>
+            <article className="why-card why-card-orange"><span className="why-number">01</span><span className="why-icon"><Check /></span><h3>Built around your business</h3><p>We don&apos;t start with technology. We start by understanding how your business works.</p></article>
+            <article className="why-card why-card-blue"><span className="why-number">02</span><span className="why-icon"><CodeIcon /></span><h3>One technology partner</h3><p>Website, App, Business Software, AI. Build and evolve everything with one team.</p></article>
+            <article className="why-card why-card-purple"><span className="why-number">03</span><span className="why-icon"><LayersIcon /></span><h3>Custom, not forced</h3><p>Your business doesn&apos;t have to change its workflow to fit generic software.</p></article>
+            <article className="why-card why-card-green"><span className="why-number">04</span><span className="why-icon"><SparkIcon /></span><h3>Transparent development</h3><p>You know exactly what&apos;s being built, what&apos;s included, and what comes next.</p></article>
+            <article className="why-card why-card-orange"><span className="why-number">05</span><span className="why-icon"><Check /></span><h3>Long-term support</h3><p>Technology doesn&apos;t end at launch. We provide ongoing support and scaling.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section className="timeline section-pad" style={{ backgroundColor: "#0b0f13", borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+        <div className="container">
+          <div className="section-kicker">/ the process</div>
+          <h2 style={{ marginBottom: "3rem", fontSize: "clamp(36px, 4vw, 56px)", lineHeight: 1.05, letterSpacing: "-.04em", fontWeight: 600 }}>What happens after<br /><span>I enquire?</span></h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
+              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>01 — We understand your idea</div>
+              <p style={{ color: '#a2b1bd', margin: 0 }}>A 15–30 minute discussion with our team to understand your vision.</p>
+            </div>
+            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
+              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>02 — We analyse your requirements</div>
+              <p style={{ color: '#a2b1bd', margin: 0 }}>We map out business requirements, users, workflows, and technology needs.</p>
+            </div>
+            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
+              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>03 — We recommend the right solution</div>
+              <p style={{ color: '#a2b1bd', margin: 0 }}>You don&apos;t need to know which technology you need; we will architect it for you.</p>
+            </div>
+            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
+              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>04 — You receive a proposal</div>
+              <p style={{ color: '#a2b1bd', margin: 0 }}>Detailed scope, features, timeline, and commercials. Complete transparency.</p>
+            </div>
+            <div style={{ padding: '2rem', backgroundColor: '#11151a', borderRadius: '12px', border: '1px solid #1a222c' }}>
+              <div style={{ color: 'var(--lime)', fontWeight: 'bold', marginBottom: '8px' }}>05 — Development begins</div>
+              <p style={{ color: '#a2b1bd', margin: 0 }}>Milestones, reviews, and regular communication throughout the build.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="not-for-everyone section-pad">
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+          <div>
+            <h3 style={{ fontSize: '24px', marginBottom: '1.5rem', color: '#f5c06c' }}>We may not be the right fit if...</h3>
+            <ul style={{ color: '#a2b1bd', display: 'flex', flexDirection: 'column', gap: '1rem', listStyle: 'none', padding: 0 }}>
+              <li>✕ You&apos;re looking for the cheapest possible development.</li>
+              <li>✕ You only want someone to write code without understanding the business.</li>
+              <li>✕ Requirements are intentionally unclear and expected to remain that way.</li>
+              <li>✕ You&apos;re looking for a temporary developer rather than a technology partner.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style={{ fontSize: '24px', marginBottom: '1.5rem', color: '#97d197' }}>We work best with businesses that...</h3>
+            <ul style={{ color: '#a2b1bd', display: 'flex', flexDirection: 'column', gap: '1rem', listStyle: 'none', padding: 0 }}>
+              <li>✓ Have a real business problem to solve.</li>
+              <li>✓ Want technology built around their workflow.</li>
+              <li>✓ Value maintainability and scalable code.</li>
+              <li>✓ Want a long-term technology partner.</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -381,10 +423,13 @@ export default function Home() {
 
       <section className="contact" id="contact">
         <div className="container contact-inner">
-          <div className="contact-kicker"><SparkIcon /> Have a good idea?</div>
-          <h2>Let&apos;s make<br /><em>something</em> happen.</h2>
-          <p>Tell us what you&apos;re working on. We&apos;ll bring the coffee and the right questions.</p>
-          <div className="contact-actions"><a className="button button-lime" href={whatsappUrl}>Start your project <ArrowUpRight size={17} /></a><a className="contact-email" href="mailto:contact@tecnobij.com">contact@tecnobij.com <ArrowUpRight size={15} /></a></div>
+          <div className="contact-kicker"><SparkIcon /> Have an idea?</div>
+          <h2>Let&apos;s turn it into a working<br /><em>business solution.</em></h2>
+          <p>Tell us what you&apos;re trying to achieve. We&apos;ll help you understand what should be built — even if you&apos;re not ready to start immediately.</p>
+          <div className="contact-actions" style={{ flexDirection: 'column', alignItems: 'center' }}>
+            <a className="button button-lime" href="/idea" style={{ width: '100%', maxWidth: '400px', justifyContent: 'center' }}>Tell us what you want to build <ArrowUpRight size={17} /></a>
+            <a className="contact-email" href={whatsappUrl} style={{ marginTop: '1rem' }}>Not sure what you need? Talk to a technology consultant <ArrowUpRight size={15} /></a>
+          </div>
         </div>
         <div className="contact-shape shape-one"></div><div className="contact-shape shape-two"></div>
       </section>
@@ -405,7 +450,7 @@ export default function Home() {
           <div className="footer-main">
             <div className="footer-brand-block"><a className="brand footer-brand" href="#hero"><span className="brand-logo-crop"><img src={logoAsset.src} alt="" /></span><span>tecnobij<span className="brand-dot">.</span></span></a><div className="footer-tagline">Custom software. Smart systems.<br /><i>Real business impact.</i></div><div className="footer-socials"><a href="#contact" aria-label="LinkedIn">in</a><a href="#contact" aria-label="Instagram">ig</a><a href={whatsappUrl} aria-label="WhatsApp">wa</a></div></div>
             <div className="footer-column"><h3>Services</h3><a href="/solutions/website-development">Web Development</a><a href="/solutions/mobile-app-development">Mobile App Development</a><a href="/solutions/custom-software-development">Custom Software</a><a href="/business-core-systems/crm">CRM Software</a><a href="/business-core-systems/erp">ERP Software</a><a href="#services">IT Consultations</a></div>
-            <div className="footer-column"><h3>Company</h3><a href="/#about">About Tecnobij</a><a href="/#process">How We Work</a><a href="/#partners">Academic Partners</a><a href="/#contact">Contact Us</a></div>
+            <div className="footer-column"><h3>Company</h3><a href="/#about">About Tecnobij</a><a href="/process">How We Work</a><a href="/trust">Trust & Security</a><a href="/estimate">Project Cost Calculator</a><a href="/#contact">Contact Us</a></div>
             <div className="footer-column"><h3>Our solutions</h3><a href="/solutions/website-development">Website Development</a><a href="/business-core-systems/erp">Enterprise Core Systems</a><a href="/solutions/mobile-app-development">Mobile Applications</a><a href="/solutions/custom-software-development">Custom Business Software</a></div>
             <div className="footer-column footer-contact-column"><h3>Contact us</h3><a href="#contact"><span className="footer-contact-icon">⌖</span><span>Pune, Maharashtra<br />India</span></a><a href="tel:+917620638650"><span className="footer-contact-icon">⌕</span><span>+91 7620638650</span></a><a href="mailto:contact@tecnobij.com"><span className="footer-contact-icon">@</span><span>contact@tecnobij.com</span></a></div>
           </div>
