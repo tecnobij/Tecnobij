@@ -3,7 +3,7 @@ import "./globals.css";
 import "./brand.css";
 
 export const metadata: Metadata = {
-  title: "Tecnobij Solutions | Custom Software, Mobile Apps & Web Development",
+  title: "Tecnobij Solutions | Bespoke Software, Mobile Apps & Web Development",
   description:
     "Tecnobij Solutions builds bespoke web applications, mobile apps, and custom business software for organizations, institutions, and ambitious SMEs. Elevate your core business processes.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
   openGraph: {
-    title: "Tecnobij Solutions | Custom Software & Mobile Apps",
+    title: "Tecnobij Solutions | Bespoke Software & Mobile Apps",
     description: "Expert software services, mobile app development, and bespoke websites for your core business needs.",
     url: "https://tecnobij-wine.vercel.app", // Ensure this points to the active domain
     siteName: "Tecnobij Solutions",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tecnobij Solutions | Custom Software & Mobile Apps",
+    title: "Tecnobij Solutions | Bespoke Software & Mobile Apps",
     description: "Expert software services, mobile app development, and bespoke websites for your core business needs.",
     images: ["/logo.png"],
   },
