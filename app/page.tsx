@@ -122,11 +122,11 @@ export default function Home() {
             <span>tecnobij<span className="brand-dot">.</span></span>
           </a>
           <div className={`nav-links ${menuOpen ? "is-open" : ""}`}>
-            <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
-            <a href="#services" onClick={() => setMenuOpen(false)}>Solutions</a>
-            <a href="#work" onClick={() => setMenuOpen(false)}>Work</a>
+            <a href="/solutions/website-development" onClick={() => setMenuOpen(false)}>Web Development</a>
+            <a href="/solutions/mobile-app-development" onClick={() => setMenuOpen(false)}>App Development</a>
+            <a href="/solutions/custom-software-development" onClick={() => setMenuOpen(false)}>Custom Software</a>
+            <a href="/business-core-systems/erp" onClick={() => setMenuOpen(false)}>ERP & CRM</a>
             <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
             <a className="mobile-nav-cta" href={whatsappUrl}>Let&apos;s Talk <span aria-hidden="true">→</span></a>
           </div>
           <a className="nav-cta" href={whatsappUrl}>Let&apos;s Talk <span aria-hidden="true">→</span></a>
@@ -380,9 +380,9 @@ export default function Home() {
           <div className="footer-cta"><span className="footer-cta-icon"><SparkIcon /></span><h2>Let&apos;s build something<br /><em>remarkable together.</em></h2><div className="footer-cta-divider"></div><p>Have a project in mind or just want to say hi?<br />We&apos;d love to hear from you.</p><a className="footer-cta-button" href="#contact">Start your project <ArrowUpRight size={17} /></a></div>
           <div className="footer-main">
             <div className="footer-brand-block"><a className="brand footer-brand" href="#hero"><span className="brand-logo-crop"><img src={logoAsset.src} alt="" /></span><span>tecnobij<span className="brand-dot">.</span></span></a><div className="footer-tagline">Custom software. Smart systems.<br /><i>Real business impact.</i></div><div className="footer-socials"><a href="#contact" aria-label="LinkedIn">in</a><a href="#contact" aria-label="Instagram">ig</a><a href={whatsappUrl} aria-label="WhatsApp">wa</a></div></div>
-            <div className="footer-column"><h3>Services</h3><a href="#services">Web Development</a><a href="#services">Mobile App Development</a><a href="#services">AI/ML Development</a><a href="#services">CRM Software</a><a href="#services">ERP Software</a><a href="#services">IT Consultations</a></div>
-            <div className="footer-column"><h3>Company</h3><a href="#about">About Tecnobij</a><a href="#process">How We Work</a><a href="#partners">Academic Partners</a><a href="#contact">Contact Us</a></div>
-            <div className="footer-column"><h3>Our solutions</h3><a href="#services">Domain &amp; Hosting</a><a href="#services">Custom Business Software</a><a href="#services">Web Applications</a><a href="#services">Mobile Applications</a></div>
+            <div className="footer-column"><h3>Services</h3><a href="/solutions/website-development">Web Development</a><a href="/solutions/mobile-app-development">Mobile App Development</a><a href="/solutions/custom-software-development">Custom Software</a><a href="/business-core-systems/crm">CRM Software</a><a href="/business-core-systems/erp">ERP Software</a><a href="#services">IT Consultations</a></div>
+            <div className="footer-column"><h3>Company</h3><a href="/#about">About Tecnobij</a><a href="/#process">How We Work</a><a href="/#partners">Academic Partners</a><a href="/#contact">Contact Us</a></div>
+            <div className="footer-column"><h3>Our solutions</h3><a href="/solutions/website-development">Website Development</a><a href="/business-core-systems/erp">Enterprise Core Systems</a><a href="/solutions/mobile-app-development">Mobile Applications</a><a href="/solutions/custom-software-development">Custom Business Software</a></div>
             <div className="footer-column footer-contact-column"><h3>Contact us</h3><a href="#contact"><span className="footer-contact-icon">⌖</span><span>Pune, Maharashtra<br />India</span></a><a href="tel:+917620638650"><span className="footer-contact-icon">⌕</span><span>+91 7620638650</span></a><a href="mailto:contact@tecnobij.com"><span className="footer-contact-icon">@</span><span>contact@tecnobij.com</span></a></div>
           </div>
           <div className="footer-values"><div><span className="footer-value-icon value-orange">✦</span><span><b>Purposeful solutions</b><small>We build software around your real needs.</small></span></div><div><span className="footer-value-icon value-blue">◇</span><span><b>Reliable delivery</b><small>Quality, performance, and care in every build.</small></span></div><div><span className="footer-value-icon value-green">♧</span><span><b>Client first</b><small>Your growth and success stay at the centre.</small></span></div><div><span className="footer-value-icon value-purple">◌</span><span><b>Here to support</b><small>Expert guidance whenever you need it.</small></span></div></div>
