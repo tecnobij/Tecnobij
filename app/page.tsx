@@ -171,6 +171,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="trust-signals">
+        <div className="container trust-signals-inner">
+          <p className="trust-kicker">TRUSTED BY AMBITIOUS BUSINESSES & INSTITUTIONS</p>
+          <div className="trust-stats-wrapper">
+            <div className="trust-stat">
+              <span className="trust-stat-number">50+</span>
+              <span className="trust-stat-label">Projects Delivered</span>
+            </div>
+            <div className="trust-stat">
+              <span className="trust-stat-number">98%</span>
+              <span className="trust-stat-label">Client Retention</span>
+            </div>
+            <div className="trust-stat">
+              <span className="trust-stat-number">5+</span>
+              <span className="trust-stat-label">Years of Excellence</span>
+            </div>
+            <div className="trust-stat">
+              <span className="trust-stat-number">24/7</span>
+              <span className="trust-stat-label">Dedicated Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="intro section-pad">
         <div className="container who-grid">
           <div className="who-copy">
